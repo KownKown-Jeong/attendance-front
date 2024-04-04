@@ -1,9 +1,9 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <div class="login-container">
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <style>
@@ -15,16 +15,7 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.login-container {
+  margin-top: 50px; /* 상단 여백 조절 */
 }
 </style>
