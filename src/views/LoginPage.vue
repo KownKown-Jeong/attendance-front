@@ -20,7 +20,7 @@
             </div>  
         </div>
         <button class="login-btn" @click="login">확인</button>
-        <button class="signup-btn" @click="goToSignup">회원가입</button>
+        <button class="signup-btn" @click="signup">회원가입</button>
       </div>
     </div>
 </template>
@@ -81,8 +81,8 @@ export default {
             alert('로그인에 실패했습니다. 입력 정보를 확인해주세요.');
         });
         },
-        goToSignup() {
-        // 회원가입 페이지로 이동하는 로직 추가
+        signup() {
+            this.$router.push('/signup');
         }
         
        
